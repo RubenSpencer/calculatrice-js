@@ -1,0 +1,38 @@
+body {
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: gray;
+    display: grid;
+    grid-template-columns: repeat(4, 80px); /* 4 colonnes de 80px */
+    grid-template-rows: auto repeat(4, 80px); /* une ligne pour l'écran + 4 lignes de boutons */
+    gap: 10px; /* espace entre les boutons */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container input {
+    grid-column: span 4; /* l'input prend toute la largeur */
+    height: 60px;
+    font-size: 2rem;
+    text-align: right;
+    padding: 10px;
+}
+
+button {
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: lightgray;
+}
